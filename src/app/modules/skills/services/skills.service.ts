@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
-import { Skill } from '../models/skill';
-import { Level } from '../types/level.enum';
+import { Skill } from '../../../shared/models/skill';
+import { Level } from '../../../shared/types/level.enum';
 
 @Injectable({
   providedIn: 'root'
