@@ -1,18 +1,19 @@
 <div id="header">
+  <nav>
+    <a class="btn" routerLink="greeting" routerLinkActive="active">Home</a>
+    <a class="btn" routerLink="skills" routerLinkActive="active">Skills</a>
+    <a class="btn" routerLink="contact" routerLinkActive="Active">Contact</a>
+  </nav>
   <h1>
     {{ title }}
   </h1>
   <h3>
     {{tagLine}}
   </h3>
-  <app-greeting></app-greeting>
+  <router-outlet></router-outlet>
   <div id="about" style="text-align: center">
     {{aboutMe}}
   </div>
-</div>
-
-<div id="skills">
-  <app-skills></app-skills>
 </div>
 
 
@@ -22,8 +23,5 @@
   </div>
   <div id="con">
     <app-contacts></app-contacts>
-  </div>
-  <div id="form">
-    <app-contact-form></app-contact-form>
   </div>
 </div>

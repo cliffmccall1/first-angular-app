@@ -8,6 +8,7 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { NewcontactComponent } from './components/newcontact/newcontact.component';
 import { SkillsModule } from './modules/skills/skills.module';
 import { ContactsModule } from './modules/contacts/contacts.module';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { ContactsModule } from './modules/contacts/contacts.module';
     ContactFormComponent,
     NewcontactComponent
   ],
-  imports: [BrowserModule, FormsModule, SkillsModule, ContactsModule],
+  imports: [BrowserModule, FormsModule, SkillsModule, ContactsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
