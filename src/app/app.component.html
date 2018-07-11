@@ -2,7 +2,9 @@
   <nav>
     <a class="btn" routerLink="greeting" routerLinkActive="active">Home</a>
     <a class="btn" routerLink="skills" routerLinkActive="active">Skills</a>
-    <a class="btn" routerLink="contact" routerLinkActive="Active">Contact</a>
+    <a class="btn" routerLink="contact" routerLinkActive="active">Contact Me!</a>
+    <a class="btn" routerLink="movies" routerLinkActive="active">Movies</a>
+    <a class="btn" routerLink="music" routerLinkActive="active">Music</a>
   </nav>
   <h1>
     {{ title }}
@@ -11,17 +13,17 @@
     {{tagLine}}
   </h3>
   <router-outlet></router-outlet>
-  <div id="about" style="text-align: center">
+  <!-- <div id="about" style="text-align: center">
     {{aboutMe}}
-  </div>
+  </div> -->
 </div>
 
 
-<div id="contacts">
+<!-- <div id="contacts">
   <div id="new">
     <app-newcontact></app-newcontact>
   </div>
   <div id="con">
     <app-contacts></app-contacts>
   </div>
-</div>
+</div> -->

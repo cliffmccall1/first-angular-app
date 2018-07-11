@@ -1,0 +1,59 @@
+{
+  "movies": [
+    {
+      "id": 0,
+      "title": "Moon",
+      "director": "Duncan Jones",
+      "image_url":
+        "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Moon_%282008%29_film_poster.jpg/215px-Moon_%282008%29_film_poster.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Mute",
+      "director": "Duncan Jones",
+      "image_url":
+        "https://upload.wikimedia.org/wikipedia/en/8/82/Mute_poster.png"
+    },
+    {
+      "id": 2,
+      "title": "Metropolis",
+      "director": "Fritz Lang",
+      "image_url":
+        "https://upload.wikimedia.org/wikipedia/en/0/06/Metropolisposter.jpg"
+    }
+  ],
+  "music": [
+    {
+      "id": 0,
+      "title": "Magic Carpet Ride",
+      "artist": "Steppenwolf",
+      "url": "U4WiyxXpyZc"
+    },
+    {
+      "id": 1,
+      "title": "Got Ur Back",
+      "artist": "Sharam Jey",
+      "url": "J4AWt5sWC_4"
+    }
+  ],
+  "contact": [
+    {
+      "firstName": "Andy",
+      "lastName": "Dwyer",
+      "phoneNumber": "334-555-5555",
+      "email": "greatestrockstar@gmail.com"
+    },
+    {
+      "firstName": "Leslie",
+      "lastName": "Knope",
+      "phoneNumber": "334-555-2345",
+      "email": "lknope@pawnee.gov"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Ralphio",
+      "phoneNumber": "334-333-3333",
+      "email": "flushedwithkash@gmail.com"
+    }
+  ]
+}

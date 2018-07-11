@@ -1,23 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { Contact } from '../../../../shared/models/contact';
-import { ContactsService } from '../../services/contacts.service';
+import { Component, OnInit } from "@angular/core";
+import { Contact } from "../../../../shared/models/contact";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+
+import { of } from "rxjs";
 
 @Component({
-  selector: 'app-contacts',
-  templateUrl: './contacts.component.html',
-  styleUrls: ['./contacts.component.css']
+  selector: "app-contacts",
+  templateUrl: "./contacts.component.html",
+  styleUrls: ["./contacts.component.css"]
 })
 export class ContactsComponent implements OnInit {
-  contact: Contact[];
-  dataService: ContactsService;
+  private contactRoute = "http://localhost:3000/contact";
+  public contact: Contact[];
 
-  constructor(private contactsService: ContactsService) {
-    this.dataService = this.contactsService;
+  constructor(private http: HttpClient) {}
+
+  getContact() {
+    this.http.get<Contact[]>(this.contactRoute).subscribe(contact => {
+      this.contact = contact;
+      console.log("Contact", this.contact);
+    });
   }
-
-  ngOnInit(): void {
-    this.dataService
-      .getContacts()
-      .subscribe(contact => (this.contact = contact));
+  ngOnInit() {
+    this.getContact();
   }
 }
